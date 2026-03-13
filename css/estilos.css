@@ -1,0 +1,61 @@
+/* css/estilos.css */
+:root {
+    --pet-primary: #453f3a2e; /* Naranja cálido */
+    --pet-secondary: #4ea899; /* Verde agua */
+    --pet-dark: #3a2b25; /* Marrón oscuro */
+}
+
+body {
+    background-color: #fcf9f2; /* Crema suave */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+}
+
+/* Redefiniendo variables de Bootstrap y nav */
+.nav-petshop {
+    background-color: var(--pet-dark) !important;
+}
+.btn-primary {
+    background-color: var(--pet-primary) !important;
+    border-color: var(--pet-primary) !important;
+}
+.btn-primary:hover {
+    background-color: #d9782b !important;
+    border-color: #d9782b !important;
+}
+.text-primary {
+    color: var(--pet-primary) !important;
+}
+.bg-primary {
+    background-color: var(--pet-primary) !important;
+}
+
+.card-product {
+    transition: transform 0.2s;
+    border-color: #f0e6d5;
+}
+.card-product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+.product-img {
+    height: 200px;
+    object-fit: contain;
+    padding: 1rem;
+    background-color: white;
+    border-bottom: 1px solid #f0e6d5;
+}
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+}
+.footer-custom {
+    background-color: var(--pet-dark);
+    color: rgb(153, 116, 116);
+    margin-top: auto;
+}
